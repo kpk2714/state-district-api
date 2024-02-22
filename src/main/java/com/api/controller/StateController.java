@@ -3,6 +3,7 @@ package com.api.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -33,7 +34,7 @@ public class StateController {
 	}
 	
 	@GetMapping("/getAllState")
-	//@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "https://65d62eea47f45d00088dc694--portal-syn.netlify.app")
 	public List<State> getAllState(){
 		return stateService.findAllState();
 	}
