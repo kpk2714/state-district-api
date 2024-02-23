@@ -37,7 +37,7 @@ public class PostController {
 	}
 	
 	@GetMapping("/getAllPost/districtID={districtId}")
-	@CrossOrigin(origins = "https://65d62eea47f45d00088dc694--portal-syn.netlify.app")
+	@CrossOrigin(origins = "https://65d81cb2f98ebb898c584470--portal-syn.netlify.app")
 	public List<Post> getAllPost(@PathVariable String districtId) {
 		return postService.fetchAllPostByDisrtrictId(districtId);
 	}

@@ -37,7 +37,7 @@ public class InstitueController {
 	
 	
 	@GetMapping("/getAllInstitute/universityId={uniId}")
-	@CrossOrigin(origins = "https://65d62eea47f45d00088dc694--portal-syn.netlify.app")
+	@CrossOrigin(origins = "https://65d81cb2f98ebb898c584470--portal-syn.netlify.app")
 	public List<Institute> getAllInstitute(@PathVariable String uniId){
 		return instituteService.fetchInstituteByStateId(uniId);
 	}
